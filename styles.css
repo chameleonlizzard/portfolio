@@ -1,5 +1,11 @@
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+.c-education__icons--middle {
+    margin-top: 4px
+}
+
+.c-education__icons--32dp {
+    font-size: 32px;
+}
+
+.l-page--title {
+    padding: 80px 0 20px 0;
 }

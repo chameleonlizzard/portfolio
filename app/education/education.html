@@ -1,0 +1,35 @@
+<div class="mdl-grid">
+    <h1 class="mdl-typography--display-1-color-contrast mdl-typography--text-right mdl-cell mdl-cell--12-col l-page--title">
+        {{title}}</h1>
+    <div class="mdl-cell mdl-cell--6-col mdl-cell mdl-card mdl-shadow--3dp c-education"
+         *ngFor="let education of educations">
+        <div class="mdl-card__media">
+            <img src="">
+        </div>
+        <div class="mdl-card__title">
+            <h4 class="mdl-card__title-text">{{education.title}}</h4>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <span class="mdl-typography--font-light mdl-typography--subhead" [innerHtml]="education.description">
+
+            </span>
+        </div>
+        <div class="mdl-card__actions">
+            <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"><i
+                            class="material-icons c-education__icons c-education__icons--32dp">schedule</i></span>
+                    <span class="mdl-chip__text">{{education.periodStart}} - {{education.periodEnd}}</span>
+            </span>
+            <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"><i
+                            class="material-icons c-education__icons c-education__icons--middle">business</i></span>
+                    <span class="mdl-chip__text">{{education.school}}</span>
+            </span>
+            <span class="mdl-chip mdl-chip--contact">
+                    <span class="mdl-chip__contact mdl-color--teal mdl-color-text--white"><i
+                            class="material-icons c-education__icons c-education__icons--32dp">bubble_chart</i></span>
+                    <span class="mdl-chip__text">{{education.level}}</span>
+            </span>
+        </div>
+    </div>
+</div>
